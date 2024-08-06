@@ -1,0 +1,857 @@
+<html>
+
+<head>
+    <title>HERO - OMORI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-– estilos -->
+    <link href="../src/css/config.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/global.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/wiki.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/abridorImagem.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/menu.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/article.css" type="text/css" rel="stylesheet" />
+    <!-– jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-– fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Roboto&display=swap" rel="stylesheet">
+    <!-– bibliotecas de animação -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body id="body">
+
+  <div class="cookiesWarn">
+    <div class="mainDialogo">
+      <div class="blackBorder" style="width: min-content;">
+      <div class="dialogoNome" id="dialogoNome">
+        <p class="dialogName"></p>
+      </div>
+    </div>
+      <div class="blackBorder">
+        <div class="dialogo">
+          <p class="dialogName" id="dialogMessage">
+          </p>
+          <div id="setaBundle">
+            <p class="diagolSeta" id="diagolSetaTexto"> Pressione Enter para continuar</p>
+            <img src="../src/img/seta.png" class="dialogSeta" id="dialogSeta" height="50px"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <audio loop id="typing">
+        <source src="../src/sounds/typing.ogg">
+    </audio>
+
+    <audio id="meow">
+        <source src="../src/sounds/meow">
+    </audio>
+
+    <div class="abrirImagem">
+        <div class="panel">
+            <div class="permmenu" style="margin-left: auto;" id="openedImageBack">
+                Voltar
+            </div>
+            <div>
+                <div class="viewport">
+                    <img src="../src/img/gamepics/1.jpg" id="openedImage">
+                </div>
+            </div>
+            <p class="comment" id="imageComment">"Omori e seus amigos no espaço branco."</p>
+        </div>
+    </div>
+
+    <div class="main" style="background: url('../src/img/1148181.png')">
+      <div class="topmenus">
+        <div class="header">
+    
+          <span class="material-icons menuBTN" id="menuBTN">
+            menu
+          </span>
+    
+          <img src="../src/img/OMORI_logo.png" class="logo">
+          <div class="headermenu">
+          <!--DESKTOP MENU-->
+            <div class="menu desktopMenu">
+              <a href="../index.html">
+                <div class="menuOption">
+                  <div class="info">
+                    <img src="../src/img/menuoptions/home.png" class="icon" height="32px" />
+                    <span class="text">Início</span>
+                  </div>
+                </div>
+              </a>
+    
+              <div class="menuOption hasSubmenu">
+                <div class="info">
+                  <img src="../src/img/menuoptions/bed.png" class="icon" height="32px" />
+                  <span class="text">Personagens</span>
+                </div>
+                <div class="innerSubmenu">
+                  <div class="subMenu">
+                    <span class="title">Principais</span>
+    
+                    <a href="sunny.html">
+                      <div class="subMenuOption">
+                        <div class="image omori"></div>
+                        <span class="subMenuOptionText">OMORI</span>
+                      </div>
+                    </a>
+    
+                    <a href="aubrey.html">
+                      <div class="subMenuOption">
+                        <div class="image aubrey"></div>
+                        <span class="subMenuOptionText">Aubrey</span>
+                      </div>
+    
+                      <a href="kel.html">
+                        <div class="subMenuOption">
+                          <div class="image kel"></div>
+                          <span class="subMenuOptionText">Kel</span>
+                        </div>
+                      </a>
+    
+                      <a href="hero.html">
+                        <div class="subMenuOption">
+                          <div class="image hero"></div>
+                          <span class="subMenuOptionText">Hero</span>
+                        </div>
+                      </a>
+    
+                      <a href="basil.html">
+                        <div class="subMenuOption">
+                          <div class="image basil"></div>
+                          <span class="subMenuOptionText">Basil</span>
+                        </div>
+                      </a>
+    
+                      <a href="mari.html">
+                        <div class="subMenuOption">
+                          <div class="image mari"></div>
+                          <span class="subMenuOptionText">Mari</span>
+                        </div>
+                      </a>
+    
+                      <span class="title">Vilões</span>
+    
+                      <a href="boss.html">
+                        <div class="subMenuOption">
+                          <div class="image boss"></div>
+                          <span class="subMenuOptionText">Boss</span>
+                        </div>
+                      </a>
+    
+                      <a href="pluto.html">
+                        <div class="subMenuOption">
+                          <div class="image pluto"></div>
+                          <span class="subMenuOptionText">Pluto</span>
+                        </div>
+                      </a>
+    
+                      <a href="sweetheart.html">
+                        <div class="subMenuOption">
+                          <div class="image sweetheart"></div>
+                          <span class="subMenuOptionText">Sweet H.</span>
+                        </div>
+                      </a>
+    
+                      <a href="jawsum.html">
+                        <div class="subMenuOption">
+                          <div class="image jawsum"></div>
+                          <span class="subMenuOptionText">Mr. Jawsum</span>
+                        </div>
+                      </a>
+    
+                      <a href="hooligans.html">
+                        <div class="subMenuOption">
+                          <div class="image hooligans"></div>
+                          <span class="subMenuOptionText">Valentões</span>
+                        </div>
+                      </a>
+    
+                      <a href="humphrey.html">
+                        <div class="subMenuOption">
+                          <div class="image humphrey"></div>
+                          <span class="subMenuOptionText">Humphrey</span>
+                        </div>
+                      </a>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="menuOption hasSubmenu">
+                <div class="info">
+                  <img src="../src/img/menuoptions/history.png" class="icon" height="32px" />
+                  <span class="text">História</span>
+                </div>
+    
+                <div class="innerSubmenu">
+                  <div class="subMenu">
+                    <a href="../history/finals.html">
+                      <div class="subMenuOption">
+                        <img src="https://omori.netlify.app//src/img/menuoptions/history/general.gif" height="32px" />
+                        <span class="subMenuOptionText">Finais</span>
+                      </div>
+                    </a>
+    
+                    <a href="../history/tagging.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/history/questions.gif" height="32px" />
+                        <span class="subMenuOptionText">Tagging</span>
+                      </div>
+                    </a>
+    
+                    <a href="../history/weapons.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/whitespace/knife.png" height="32px" />
+                        <span class="subMenuOptionText">Armas</span>
+                      </div>
+                    </a>
+    
+                    <a href="../history/emotions/index.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/history/mechanics.gif" height="32px" />
+                        <span class="subMenuOptionText">Emoções</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="menuOption hasSubmenu">
+                <div class="info">
+                  <img src="../src/img/menuoptions/worlds.png" class="icon" height="32px" />
+                  <span class="text">Mundos</span>
+                </div>
+    
+                <div class="innerSubmenu">
+                  <div class="subMenu">
+                    <a href="../worlds/headspace.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/Dream_World.png" height="64px" />
+                        <span class="subMenuOptionText">Mundo Imaginário</span>
+                      </div>
+                    </a>
+    
+                    <a href="../worlds/faraway.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/GOOD_DOG.png" height="64px" />
+                        <span class="subMenuOptionText">Mundo Real</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+    
+              <a href="../music.html">
+                <div class="menuOption">
+                  <div class="info">
+                    <img src="../src/img/menuoptions/characters/Spiritmariwalk.webp" class="icon" height="32px" />
+                    <span class="text">Música</span>
+                  </div>
+                </div>
+              </a>
+    
+              <a href="">
+                <div class="">
+                  <div class="">
+                    <img src="" class="" height="" />
+                    <span class=""></span>
+                  </div>
+                </div>
+              </a>
+    
+              <a href="">
+                <div class="">
+                  <div class="">
+                    <img src="" class="" height="" />
+                    <span class=""></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+          </div>
+          <img src="../src/img/miau" class="miau">
+        </div>
+    
+        <!-- MOBILE MENU-->
+    
+        <div class="mobileMenu" id="mobileMenu">
+          <a href="../index.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/home.png" class="icon" height="32px" />
+              <span class="text">Inicio</span>
+            </div>
+          </a>
+          <a href="hero.html#">
+            <div class="btn" id="opencharactersMobileMenu" hassubmenu=true>
+              <img src="../src/img/menuoptions/bed.png" class="icon" height="32px" />
+              <span class="text">Personagens</span>
+            </div>
+          </a>
+          <a href="hero.html#">
+            <div class="btn" id="openhistoryMobileMenu" hassubmenu=true>
+              <img src="../src/img/menuoptions/history.png" class="icon" height="32px" />
+              <span class="text">História</span>
+            </div>
+          </a>
+          <a href="hero.html#">
+            <div class="btn" id="openworldsMobileMenu" hassubmenu=true>
+              <img src="../src/img/menuoptions/worlds.png" class="icon" height="32px" />
+              <span class="text">Mundos</span>
+            </div>
+          </a>
+          <a href="../music.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/characters/Spiritmariwalk.webp" class="icon" height="32px" />
+              <span class="text">Música</span>
+            </div>
+          </a>
+          <a href="">
+            <div class="btn">
+              <img src="" class="icon" height="" />
+              <span class=""></span>
+            </div>
+          </a>
+          <a href="">
+            <div class="btn">
+              <img src="" class="" height="" />
+              <span class=""></span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="mobileMenu" id="charactersMobileMenu">
+          <p>Principais</p>
+    
+          <a href="sunny.html">
+            <div class="btn">
+              <div class="image omori"></div>
+              <span class="text">OMORI</span>
+            </div>
+          </a>
+          <a href="aubrey.html">
+            <div class="btn">
+              <div class="image aubrey"></div>
+              <span class="text">Aubrey</span>
+            </div>
+          </a>
+          <a href="kel.html">
+            <div class="btn">
+              <div class="image kel"></div>
+              <span class="text">Kel</span>
+            </div>
+          </a>
+          <a href="hero.html">
+            <div class="btn">
+              <div class="image hero"></div>
+              <span class="text">Hero</span>
+            </div>
+          </a>
+          <a href="basil.html">
+            <div class="btn">
+              <div class="image basil"></div>
+              <span class="text">Basil</span>
+            </div>
+          </a>
+          <a href="mari.html">
+            <div class="btn">
+              <div class="image mari"></div>
+              <span class="text">Mari</span>
+            </div>
+          </a>
+    
+          <p>Vilões</p>
+    
+          <a href="boss.html">
+            <div class="btn">
+              <div class="image boss"></div>
+              <span class="text">Boss</span>
+            </div>
+          </a>
+    
+    
+          <a href="pluto.html">
+            <div class="btn">
+              <div class="image pluto"></div>
+              <span class="text">Pluto</span>
+            </div>
+          </a>
+    
+          <a href="sweetheart.html">
+            <div class="btn">
+              <div class="image sweetheart"></div>
+              <span class="text">Sweet Heart</span>
+            </div>
+          </a>
+    
+          <a href="jawsum.html">
+            <div class="btn">
+              <div class="image jawsum"></div>
+              <span class="text">Mr. Jawsum</span>
+            </div>
+          </a>
+    
+          <a href="hooligans.html">
+            <div class="btn">
+              <div class="image hooligans"></div>
+              <span class="text">Valentões</span>
+            </div>
+          </a>
+    
+          <a href="humphrey.html">
+            <div class="btn">
+              <div class="image humphrey"></div>
+              <span class="text">Humphrey</span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="mobileMenu" id="historyMobileMenu">
+          <a href="../history/finals.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/history/general.gif" class="icon" height="32px" />
+              <span class="text">Finais</span>
+            </div>
+          </a>
+          <a href="../history/tagging.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/history/questions.gif" class="icon" height="32px" />
+              <span class="text">Tagging</span>
+            </div>
+          </a>
+          <a href="../history/weapons.html">
+            <div class="btn">
+              <img src="../src/img/whitespace/knife.png" class="icon" height="32px" />
+              <span class="text">Armas</span>
+            </div>
+          </a>
+    
+          <a href="../history/emotions/index.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/history/mechanics.gif" class="icon" height="32px" />
+              <span class="text">Emoções</span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="mobileMenu" id="worldsMobileMenu">
+          <a href="../worlds/headspace.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/Dream_World.png" class="icon" height="32px" />
+              <span class="text">Mundo Imaginário</span>
+            </div>
+          </a>
+          <a href="../worlds/faraway.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/GOOD_DOG.png" class="icon" height="32px" />
+              <span class="text">Mundo Real</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="content">
+            <div class="block">
+                <div class="subblock" style="flex: 1;">
+                    <div class="alert spoiler">
+                        <img src="../src/img/menuoptions/characters/basil_rw.png" height="96px">
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: auto;">
+                            <span style="font-weight: 700;">ALERTA DE SPOILER</span>
+                            <span>Essa página possui spoilers importantes referentes ao "plot-twist" do jogo OMORI. </span>
+                        </div>
+                        <img src="../src/img/menuoptions/characters/basil.webp" height="96px">
+                    </div>
+
+                    <div class="alert fandom">
+                        <img src="../src/img/menuoptions/characters/aubreyhappy.webp" height="96px">
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: auto;">
+                            <span style="font-weight: 700;">OMORI WIKI</span>
+                            <span>Boa parte do conteúdo de texto ou imagens foram retiradas da WIKI de fãs de OMORI.</span>
+                            <span>Se você gostar daqui, visite lá para mais detalhes em relação a história do jogo!</span>
+                            <a href="https://omori.fandom.com/wiki/" target="_blank">CLIQUE AQUI</a>
+                        </div>
+                        <img src="../src/img/menuoptions/characters/aubreyhappy.webp" height="96px">
+                    </div>
+
+                    <h1 class="title">HERO</h1>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="subblock" style="flex: 80%">
+                    <p>
+                        <strong>HERO</strong> é um dos três deuteragonistas do jogo OMORI que fazem parte do grupo de OMORI.
+                    </p>
+                    <p>
+                        Quando marcado como o líder, HERO pode usar seu charme para convencer os outros a ajudar o grupo. 
+                    </p>
+
+                    <table>
+                      <tr>
+                        <th>Conteúdo</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div class="contentsub">
+                            <span class="contentButton">
+                              <a href="hero.html#profile">
+                                1. PERFIL
+                              </a>
+                            </span>
+
+                            <div class="insideList">
+                              <span class="contentButton">
+                                <a href="hero.html#appearence">
+                                  1.1 APARÊNCIA
+                                </a>
+                              </span>
+  
+                              <span class="contentButton">
+                                <a href="hero.html#personality">
+                                  1.2 PERSONALIDADE
+                                </a>
+                              </span>
+                            </div>
+
+                            <span class="contentButton">
+                              <a href="hero.html#history">
+                                2. HISTÓRIA
+                              </a>
+                            </span>
+
+                            <div class="insideList">
+                              <span class="contentButton">
+                                <a href="hero.html#how">
+                                  2.1 COMO ELES SE CONHECERAM?
+                                </a>
+                              </span>
+  
+                              <span class="contentButton">
+                                <a href="hero.html#revolt">
+                                  2.2 POR QUE HERO SE AFASTOU?
+                                </a>
+                              </span>
+                            </div>
+
+                            <span class="contentButton">
+                              <a href="hero.html#images">
+                                3. IMAGENS
+                              </a>
+                            </span>
+
+                          </div>
+                        </th>
+                      </tr>
+                    </table>
+
+                    <h2 class="title" id="profile">PERFIL</h2>
+
+                    <div class="separatorline"></div>
+
+                    <h3 class="title" id="appearence">APARÊNCIA</h3>
+
+                    <p>
+                        No presente, o HERO aparece como um jovem adulto com uma aparência mais madura em comparação com os outros. 
+                        HERO tem cabelos castanhos bem penteados e olhos negros como KEL. 
+                    </p>
+                    
+                    <p>
+                        Seu traje principal consiste em um suéter azul marinho com decote em V, calças cinza e sapatos brancos. 
+                        Também é notável que ele ficou mais alto como os outros personagens principais. 
+                    </p>
+
+                    <p>
+                        Na versão do Mundo Imaginário, HERO usa um conjunto de pijamas de listras azuis. 
+                        Seu cabelo está despenteado pelo sono, como pode ser visto em seus sprites. 
+                    </p>
+
+                    <p>
+                        Como KEL e AUBREY, ele não tem meias ou sapatos e seu cabelo e olhos são roxos. 
+                        De acordo com SPROUT MOLE MIKE, ele tem 5'7 "aos quinze anos. HERO também é o mais velho e mais alto do grupo. 
+                    </p>
+                </div>
+                <div class="subblock infosub" >
+                    <div class="info">
+                        <img src="../src/img/menuoptions/characters/hero.gif">
+                        <div class="line">
+                            <div class="name">Idade</div>
+                            <div class="values">
+                                <div class="value">Imaginário: 15</div>
+                                <div class="value">Mundo Real: 19</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Sexo</div>
+                            <div class="values">
+                                <div class="value">Homem</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Aniversário</div>
+                            <div class="values">
+                                <div class="value">1 de Janeiro</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Habilidade</div>
+                            <div class="values">
+                                <div class="value">Charme</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Localizações</div>
+                            <div class="values">
+                                <div class="value">Imaginário</div>
+                                <div class="value">Mundo Real</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Parentes</div>
+                            <div class="values">
+                                <div class="value">Sem nome <span style="color: gray">(Mãe)</span></div>
+                                <div class="value">Sem nome <span style="color: gray">(Pai)</span></div>
+                                <div class="value"><a href="kel.html">Kel</a><span style="color: gray">(Irmão)</span></div>
+                                <div class="value">Sally <span style="color: gray">(Irmã)</span></div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Amizades</div>
+                            <div class="values">
+                                <div class="value"><a href="sunny.html">Sunny</a> <span style="color: gray">(Amigo)</span></div>
+                                <div class="value"><a href="aubrey.html">Aubrey</a>  <span style="color: gray">(Amigo)</span></div>
+                                <div class="value"><a href="mari.html">Mari</a>   <span style="color: gray">(Interesse amoroso)</span></div>
+                                <div class="value"><a href="basil.html">Basil</a> <span style="color: gray">(Amigo)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="subblock">
+                    <h3 class="title" id="personality">PERSONALIDADE</h3>
+
+                    <p>
+                        Durante sua juventude, HERO é o pacificador do grupo, que tenta conter seus amigos sempre que eles ficam muito 
+                        nervosos. Ele é descrito como tendo uma personalidade suave e apaixonado por trabalhos domésticos como panificação, 
+                        cozinha e limpeza, o que o torna um funcionário ideal.
+                    </p>
+
+                    <p>
+                        HERO também tem um lado carismático que usa para encantar os outros. 
+                        Seu carisma permite que ele convença outras pessoas a aceitar seus pedidos, obter descontos na CAIXA DE CORREIO 
+                        e fazer amizade com animais. 
+                    </p>
+
+                    <p>
+                        No entanto, às vezes ele pode ser molenga quando confrontado e tem dificuldade em recusar os outros. 
+                        Ele também parece ter aracnofobia (um medo irracional de aranhas) a ponto de congelar completamente. 
+                        Essas características são compartilhadas com seu homólogo no mundo imaginário. 
+                    </p>    
+
+                    <p>
+                        No presente, HERO ainda mantém sua personalidade amigável e calorosa durante sua vida adulta. 
+                        Ele é muito querido pelo pessoal da cidade e admirado por seu carisma também.
+                    </p>
+
+                    <p>
+                        Ele possui um talento notável para ter sucesso em praticamente tudo o que tenta, 
+                        embora admita que sua reputação é extremamente exagerada. 
+                    </p>
+
+                    <p>
+                        HERO é bastante calmo e compreensivo com qualquer pessoa que encontra, até mesmo tentando confortá-los em momentos de angústia.
+                        Isso foi mostrado quando ele confortou AUBREY e a ajudou a se reconciliar com KEL, SUNNY e BASIL. 
+                    </p>
+
+                    <p>
+                        Apesar disso, ele está bastante amolecido em termos de personalidade, principalmente devido a sofrer de depressão 
+                        por causa da morte de MARI e por tentar colocar sua vida de volta nos trilhos. 
+                    </p>
+
+                    <p>
+                        HERO também parece manter suas emoções sob controle na maior parte do tempo, 
+                        embora fique profundamente emocionado sempre que se lembra da presença de MARI. 
+                    </p>
+
+                    <p>
+                        Apesar de tudo, HERO ainda tenta se manter forte por seus amigos e fará de tudo para garantir que eles se sintam confortáveis e seguros. 
+                    </p>
+
+
+                    <h2 class="title" id="history">HISTÓRIA</h2>
+
+                    <div class="separatorline"></div>
+
+                    <h3 class="title" id="how">COMO ELES SE CONHECERAM?</h3>
+
+                    <img src="../src/img/gamepics/EveryoneKitchen.webp">
+
+                    <p>
+                        HERO nasceu de seu pai e mãe não identificados aproximadamente 19 anos antes do início do jogo. 
+                        Três anos depois, nasceu seu irmão mais novo KEL. 
+                        HERO obteve o apelido de "HERO" por causa de seu amor por "HERO SANDWICHES". 
+                    </p>
+
+                    <p>
+                        Em algum ponto, HERO tornou-se amigo de seus vizinhos MARI e SUNNY, depois AUBREY e BASIL. 
+                        Eles, junto com seu irmão mais novo KEL, passariam a maior parte do tempo juntos.
+                    </p>
+                    
+                    <p>
+                        Um dia, HERO saiu com sua mãe para comprar roupas e sapatos e só voltou para casa à tarde. 
+                        KEL saiu para cortar o cabelo com seu pai. 
+                        AUBREY estava lá com seu pai também porque os três iriam assistir ao recital de música de MARI e SUNNY. 
+                    </p>
+
+                    <p>
+                        Era para ser naquela noite, mas quando eles voltaram para casa à noite, eles descobriram que ela havia morrido, 
+                        acreditando que ela se enforcou.
+                    </p>
+
+                    <h3 class="title" id="revolt">POR QUE HERO SE AFASTOU?</h3>
+
+                    <img src="../src/img/gamepics/Hero_introl.webp">
+
+                    <p>
+                        HERO ficou gravemente deprimido após a morte de MARI e se isolou de seus amigos, família, escola e hobbies por cerca de um ano. 
+                        KEL tentou encorajar HERO um dia, mas isso resultou em HERO descontando sua dor e raiva em KEL. 
+                        Seus pais imediatamente correram para confortá-lo, ignorando KEL, que também estava em lágrimas. 
+                        Percebendo isso, HERO imediatamente abraçou KEL e se desculpou. 
+                        Foi depois dessa instância que HERO se esforçou para fazer muito melhor, embora de acordo com KEL, ele ainda esteja um pouco fechado.
+                    </p>
+
+                    <p>
+                        Certa vez, ele pensou em se tornar um chef, em parte devido ao incentivo de MARI. 
+                        No entanto, após a morte de MARI, ele decidiu seguir os desejos de seus pais de se tornar um médico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="subblock">
+                    <h2 class="title" id="images">IMAGENS</h2>
+
+                    <div class="separatorline"></div>
+
+                    <div class="imagecontainer">
+                        <img src="../src/img/gamepics/ComfortingAubrey.webp">
+
+                        <img src="../src/img/gamepics/Group_hug_fw.webp">
+
+                        <img src="../src/img/gamepics/EveryoneCircle.webp">
+
+                        <img src="../src/img/gamepics/EveryoneKitchen.webp">
+
+                        <img src="../src/img/gamepics/SunsetPicnic.webp">
+
+                        <img src="../src/img/gamepics/Omoriorigingroup.webp">
+                    </div>
+
+                    <h2 class="title">Referências</h3>
+
+                    <a href="https://omori.fandom.com/wiki/HERO" target="_blank">Omori Fandom</a>
+
+
+                </div>
+            </div>
+      </div>
+
+      <div class="footer">
+        <div class="separator">
+          <img class="logo" src="../src/img/OMOCAT_Logo.png" ignore=true />
+          <span class="copyright"><a href="https://omori-game.com/" target="_blank">OMORI</a> é propiedade de <a href="https://www.omocat-shop.com/" target="_blank">OMOCAT LLC.</a>.</span>
+          <span class="copyright">Trabalho De <span style="color: gray;">Cauã De Souza Neves</span></span>
+          <span class="copyright"></span>
+  
+          <div class="socialmedia">
+            <a href="https://pastebin.com/wQT32sA8" target="_blank">
+              <div class="omoribtn">
+                <div class="inside">
+                  <img src="../src/img/social/discord.png">
+                </div>
+              </div>
+            </a>
+  
+            <a href="https://youtube.com/LearnMarshmello" target="_blank">
+              <div class="omoribtn">
+                <div class="inside">
+                  <img src="../src/img/social/youtube.png">
+                </div>
+              </div>
+            </a>
+  
+            <a href="https://github.com/mercuryVM/" target="_blank">
+              <div class="omoribtn">
+                <div class="inside">
+                  <img src="../src/img/social/github.png">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+    
+        <div class="separator" id="characters" style="align-items: flex-start;">
+          <span class="title">Personagens</span>
+          <div class="list">
+            <a href="sunny.html">OMORI</a>
+            <a href="aubrey.html">Aubrey</a>
+            <a href="kel.html">Kel</a>
+            <a href="hero.html">Hero</a>
+            <a href="basil.html">Basil</a>
+            <a href="mari.html">Mari</a>
+            <a href="boss.html">Boss</a>
+            <a href="pluto.html">Pluto</a>
+            <a href="sweetheart.html">Sweet Heart</a>
+            <a href="jawsum.html">Mr. Jawsum</a>
+            <a href="hooligans.html">Valentões</a>
+            <a href="humphrey.html">Humphrey</a>
+          </div>
+        </div>
+    
+        <div class="separator" style="align-items: flex-start;">
+          <span class="title">História</span>
+          <div class="list">
+            <a href="../history/tagging.html">Finais</a>
+            <a href="../history/tagging.html">Tagging</a>
+            <a href="../history/weapons.html">Armas</a>
+            <a href="../history/emotions/index.html">Emoções</a>
+          </div>
+        </div>
+    
+        <div class="separator" style="align-items: flex-start;">
+          <span class="title">Mundos</span>
+          <div class="list">
+            <a href="../worlds/headspace.html">Mundo Imaginário</a>
+            <a href="../worlds/faraway.html">Mundo Real</a>
+          </div>
+        </div>
+    
+        <div class="separator" style="align-items: flex-start;">
+          <span class="title">Extras</span>
+          <div class="list">
+            <a href="../music.html">Músicas</a>
+            <a href="../comments.html">Feedback</a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+</body>
+
+<!-– scripts carregamento posterior -->
+<script src="../src/js/dialogue.js"></script>
+    <script src="../src/js/imageopener.js"></script>
+    <script src="../src/js/global.js"></script>
+
+</html>

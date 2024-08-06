@@ -1,0 +1,367 @@
+div.header,
+div.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.header {
+  background-color: white;
+  border-bottom-color: black;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 3px;
+  border-style: solid;
+  padding: 0px 20px;
+}
+
+div.topmenus {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.footer p {
+  font-family: "Roboto";
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+div.footer {
+  padding: 15px;
+  background-color: rgb(23 7 48);
+  background-image: url(../img/background_opacidade.png);
+  background-size: cover;
+  border-top-color: black;
+  border-top-width: 4px;
+  z-index: -1;
+  border-top-style: solid;
+  background-position: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+}
+
+div.content {
+  transform: translateY(4px);
+}
+
+div.footer div.separator {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  align-items: center;
+}
+
+div.footer div.separator div.list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 200px;
+  column-gap: 20px;
+  border-top-width: 1px;
+  border-top-color: rgba(255, 255, 255, 0.151);
+  border-top-style: none;
+  padding-top: 8px;
+  width: 100%;
+}
+
+div.footer img.logo {
+  width: 96px;
+}
+
+div.footer span {
+  font-family: "OMORIGAME";
+}
+
+div.footer span.copyright {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+div.footer div.separator span.title {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+div.footer div.separator a {
+  color: #bc9cef;
+  font-size: 30px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-family: 'OMORIGAME';
+}
+
+div.footer div.separator div.list a {
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+
+div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15%;
+  background: white;
+  padding: 100px 50px;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-style: solid;
+  border-color: black;
+  overflow: hidden;
+  min-height: calc(100vh - 203px);
+}
+
+div.footer div#characters {
+  min-width: 160px;
+}
+
+div.hands img.hand {
+  height: 10vw;
+  max-height: 52px;
+  margin: 0px 15px;
+}
+
+div.hands img.hcima {
+  transform: rotate(0deg);
+}
+
+div.hands img.hbaixo {
+  transform: rotate(180deg);
+}
+
+div.content div.hands {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+div.header img.logo {
+  width: 50%;
+  max-width: 200px;
+}
+
+div.headermenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+span.menuBTN {
+  font-size: 0px;
+  display: none;
+  transition: 1s;
+}
+
+a {
+  text-decoration: none;
+  color: #2f0c7a;
+  font-family: 'Roboto';
+}
+
+body {
+  background-color: white;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+img.handextra {
+  display: block;
+}
+
+div.permmenu {
+  display: none;
+}
+
+img.miau {
+  height: 64px;
+  pointer-events: all;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+div.footer div.socialmedia {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+div.omoribtn {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  font-family: "OMORIGAME";
+  font-size: 32px;
+  width: max-content;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+div.omoribtn div.inside {
+  border-width: 2.5px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: black;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.75vw;
+}
+
+/* modificações para mobile */
+
+@media screen and (max-width: 960px) {
+  span.menuBTN {
+    font-size: 42px;
+    margin-right: auto;
+  }
+
+  div.footer div#characters {
+    min-width: unset;
+  }
+
+  span.menuBTN:hover {
+    cursor: pointer;
+  }
+
+  #walkTip {
+    display: none;
+  }
+
+  div.footer {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  div.footer div.separator {
+    width: 100%;
+  }
+
+  div.footer div.separator span.title {
+    font-size: 24px;
+  }
+
+  div.footer span.copyright {
+    font-size: 24px;
+  }
+
+  div.footer div.separator div.list {
+    flex-wrap: nowrap;
+    max-height: none;
+    row-gap: 10px;
+    border-top-style: solid;
+  }
+
+  div.footer div.separator div.list a {
+    font-size: 16px;
+  }
+
+  div.desktopMenu {
+    display: none !important;
+  }
+
+  span.menuBTN:hover div#mobileMenu {
+    display: block;
+  }
+
+  div.header {
+    border-radius: 0;
+  }
+
+  img.handextra {
+    display: none;
+  }
+
+  div.content {
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+
+  div.imageandheader div.cards img {
+    height: 170px;
+    width: auto;
+  }
+
+  div.imageandheader {
+    text-align: center;
+  }
+
+  div.content {
+    margin: 0;
+    padding: 100px 5% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  div.footer div.separator span.title {
+    font-size: 8vw;
+  }
+
+  div.omoribtn div.inside img {
+    height: 7vw;
+  }
+
+  div.omoribtn div.inside {
+    padding: 2vw;
+  }
+
+  div.footer img.logo {
+    width: 32vw;
+  }
+
+  div.footer span.copyright {
+    font-size: 8vw;
+  }
+
+  div.footer div.separator a {
+    font-size: 7vw;
+  }
+
+  div.footer div.separator div.list {
+    row-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  div.footer div.separator span.title {
+    font-size: 8vw;
+  }
+
+  div.footer div.separator div.list {
+    row-gap: 0px;
+  }
+
+  div.header,
+  div.footer {
+    padding: 10px;
+  }
+
+  div.footer div.separator div.list a {
+    font-size: 6vw;
+  }
+
+  div.header,
+  div.footer {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,759 @@
+<html>
+
+<head>
+    <title>BOSS - OMORI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-– estilos -->
+    <link href="../src/css/config.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/global.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/wiki.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/abridorImagem.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/menu.css" type="text/css" rel="stylesheet" />
+    <link href="../src/css/article.css" type="text/css" rel="stylesheet" />
+    <!-– jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-– fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Roboto&display=swap" rel="stylesheet">
+    <!-– bibliotecas de animação -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body id="body">
+
+  <div class="cookiesWarn">
+    <div class="mainDialogo">
+      <div class="blackBorder" style="width: min-content;">
+      <div class="dialogoNome" id="dialogoNome">
+        <p class="dialogName"></p>
+      </div>
+    </div>
+      <div class="blackBorder">
+        <div class="dialogo">
+          <p class="dialogName" id="dialogMessage">
+          </p>
+          <div id="setaBundle">
+            <p class="diagolSeta" id="diagolSetaTexto"> Pressione Enter para continuar</p>
+            <img src="../src/img/seta.png" class="dialogSeta" id="dialogSeta" height="50px"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <audio loop id="typing">
+        <source src="../src/sounds/typing.ogg">
+    </audio>
+
+    <audio id="meow">
+        <source src="../src/sounds/meow">
+    </audio>
+
+    <div class="abrirImagem">
+        <div class="panel">
+            <div class="permmenu" style="margin-left: auto;" id="openedImageBack">
+                Voltar
+            </div>
+            <div>
+                <div class="viewport">
+                    <img src="../src/img/gamepics/1.jpg" id="openedImage">
+                </div>
+            </div>
+            <p class="comment" id="imageComment">"Omori e seus amigos no espaço branco."</p>
+        </div>
+    </div>
+
+    <div class="main" style="background: url('../src/img/1148181.png')">
+      <div class="topmenus">
+        <div class="header">
+    
+          <span class="material-icons menuBTN" id="menuBTN">
+            menu
+          </span>
+    
+          <img src="../src/img/OMORI_logo.png" class="logo">
+          <div class="headermenu">
+          <!--DESKTOP MENU-->
+            <div class="menu desktopMenu">
+              <a href="../index.html">
+                <div class="menuOption">
+                  <div class="info">
+                    <img src="../src/img/menuoptions/home.png" class="icon" height="32px" />
+                    <span class="text">Início</span>
+                  </div>
+                </div>
+              </a>
+    
+              <div class="menuOption hasSubmenu">
+                <div class="info">
+                  <img src="../src/img/menuoptions/bed.png" class="icon" height="32px" />
+                  <span class="text">Personagens</span>
+                </div>
+                <div class="innerSubmenu">
+                  <div class="subMenu">
+                    <span class="title">Principais</span>
+    
+                    <a href="sunny.html">
+                      <div class="subMenuOption">
+                        <div class="image omori"></div>
+                        <span class="subMenuOptionText">OMORI</span>
+                      </div>
+                    </a>
+    
+                    <a href="aubrey.html">
+                      <div class="subMenuOption">
+                        <div class="image aubrey"></div>
+                        <span class="subMenuOptionText">Aubrey</span>
+                      </div>
+    
+                      <a href="kel.html">
+                        <div class="subMenuOption">
+                          <div class="image kel"></div>
+                          <span class="subMenuOptionText">Kel</span>
+                        </div>
+                      </a>
+    
+                      <a href="hero.html">
+                        <div class="subMenuOption">
+                          <div class="image hero"></div>
+                          <span class="subMenuOptionText">Hero</span>
+                        </div>
+                      </a>
+    
+                      <a href="basil.html">
+                        <div class="subMenuOption">
+                          <div class="image basil"></div>
+                          <span class="subMenuOptionText">Basil</span>
+                        </div>
+                      </a>
+    
+                      <a href="mari.html">
+                        <div class="subMenuOption">
+                          <div class="image mari"></div>
+                          <span class="subMenuOptionText">Mari</span>
+                        </div>
+                      </a>
+    
+                      <span class="title">Vilões</span>
+    
+                      <a href="boss.html">
+                        <div class="subMenuOption">
+                          <div class="image boss"></div>
+                          <span class="subMenuOptionText">Boss</span>
+                        </div>
+                      </a>
+    
+                      <a href="pluto.html">
+                        <div class="subMenuOption">
+                          <div class="image pluto"></div>
+                          <span class="subMenuOptionText">Pluto</span>
+                        </div>
+                      </a>
+    
+                      <a href="sweetheart.html">
+                        <div class="subMenuOption">
+                          <div class="image sweetheart"></div>
+                          <span class="subMenuOptionText">Sweet H.</span>
+                        </div>
+                      </a>
+    
+                      <a href="jawsum.html">
+                        <div class="subMenuOption">
+                          <div class="image jawsum"></div>
+                          <span class="subMenuOptionText">Mr. Jawsum</span>
+                        </div>
+                      </a>
+    
+                      <a href="hooligans.html">
+                        <div class="subMenuOption">
+                          <div class="image hooligans"></div>
+                          <span class="subMenuOptionText">Valentões</span>
+                        </div>
+                      </a>
+    
+                      <a href="humphrey.html">
+                        <div class="subMenuOption">
+                          <div class="image humphrey"></div>
+                          <span class="subMenuOptionText">Humphrey</span>
+                        </div>
+                      </a>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="menuOption hasSubmenu">
+                <div class="info">
+                  <img src="../src/img/menuoptions/history.png" class="icon" height="32px" />
+                  <span class="text">História</span>
+                </div>
+    
+                <div class="innerSubmenu">
+                  <div class="subMenu">
+                    <a href="../history/finals.html">
+                      <div class="subMenuOption">
+                        <img src="https://omori.netlify.app//src/img/menuoptions/history/general.gif" height="32px" />
+                        <span class="subMenuOptionText">Finais</span>
+                      </div>
+                    </a>
+    
+                    <a href="../history/tagging.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/history/questions.gif" height="32px" />
+                        <span class="subMenuOptionText">Tagging</span>
+                      </div>
+                    </a>
+    
+                    <a href="../history/weapons.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/whitespace/knife.png" height="32px" />
+                        <span class="subMenuOptionText">Armas</span>
+                      </div>
+                    </a>
+    
+                    <a href="../history/emotions/index.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/history/mechanics.gif" height="32px" />
+                        <span class="subMenuOptionText">Emoções</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="menuOption hasSubmenu">
+                <div class="info">
+                  <img src="../src/img/menuoptions/worlds.png" class="icon" height="32px" />
+                  <span class="text">Mundos</span>
+                </div>
+    
+                <div class="innerSubmenu">
+                  <div class="subMenu">
+                    <a href="../worlds/headspace.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/Dream_World.png" height="64px" />
+                        <span class="subMenuOptionText">Mundo Imaginário</span>
+                      </div>
+                    </a>
+    
+                    <a href="../worlds/faraway.html">
+                      <div class="subMenuOption">
+                        <img src="../src/img/menuoptions/GOOD_DOG.png" height="64px" />
+                        <span class="subMenuOptionText">Mundo Real</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+    
+              <a href="../music.html">
+                <div class="menuOption">
+                  <div class="info">
+                    <img src="../src/img/menuoptions/characters/Spiritmariwalk.webp" class="icon" height="32px" />
+                    <span class="text">Música</span>
+                  </div>
+                </div>
+              </a>
+    
+              <a href="">
+                <div class="">
+                  <div class="">
+                    <img src="" class="" height="" />
+                    <span class=""></span>
+                  </div>
+                </div>
+              </a>
+    
+              <a href="">
+                <div class="">
+                  <div class="">
+                    <img src="" class="" height="" />
+                    <span class=""></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+          </div>
+          <img src="../src/img/miau" class="miau">
+        </div>
+    
+        <!-- MOBILE MENU-->
+    
+        <div class="mobileMenu" id="mobileMenu">
+          <a href="../index.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/home.png" class="icon" height="32px" />
+              <span class="text">Inicio</span>
+            </div>
+          </a>
+          <a href="boss.html#">
+            <div class="btn" id="opencharactersMobileMenu" hassubmenu=true>
+              <img src="../src/img/menuoptions/bed.png" class="icon" height="32px" />
+              <span class="text">Personagens</span>
+            </div>
+          </a>
+          <a href="boss.html#">
+            <div class="btn" id="openhistoryMobileMenu" hassubmenu=true>
+              <img src="../src/img/menuoptions/history.png" class="icon" height="32px" />
+              <span class="text">História</span>
+            </div>
+          </a>
+          <a href="boss.html#">
+            <div class="btn" id="openworldsMobileMenu" hassubmenu=true>
+              <img src="../src/img/menuoptions/worlds.png" class="icon" height="32px" />
+              <span class="text">Mundos</span>
+            </div>
+          </a>
+          <a href="../music.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/characters/Spiritmariwalk.webp" class="icon" height="32px" />
+              <span class="text">Música</span>
+            </div>
+          </a>
+          <a href="">
+            <div class="btn">
+              <img src="" class="" height="" />
+              <span class=""></span>
+            </div>
+          </a>
+          <a href=".">
+            <div class="btn">
+              <img src="" class="" height="" />
+              <span class=""></span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="mobileMenu" id="charactersMobileMenu">
+          <p>Principais</p>
+    
+          <a href="sunny.html">
+            <div class="btn">
+              <div class="image omori"></div>
+              <span class="text">OMORI</span>
+            </div>
+          </a>
+          <a href="aubrey.html">
+            <div class="btn">
+              <div class="image aubrey"></div>
+              <span class="text">Aubrey</span>
+            </div>
+          </a>
+          <a href="kel.html">
+            <div class="btn">
+              <div class="image kel"></div>
+              <span class="text">Kel</span>
+            </div>
+          </a>
+          <a href="hero.html">
+            <div class="btn">
+              <div class="image hero"></div>
+              <span class="text">Hero</span>
+            </div>
+          </a>
+          <a href="basil.html">
+            <div class="btn">
+              <div class="image basil"></div>
+              <span class="text">Basil</span>
+            </div>
+          </a>
+          <a href="mari.html">
+            <div class="btn">
+              <div class="image mari"></div>
+              <span class="text">Mari</span>
+            </div>
+          </a>
+    
+          <p>Vilões</p>
+    
+          <a href="boss.html">
+            <div class="btn">
+              <div class="image boss"></div>
+              <span class="text">Boss</span>
+            </div>
+          </a>
+    
+    
+          <a href="pluto.html">
+            <div class="btn">
+              <div class="image pluto"></div>
+              <span class="text">Pluto</span>
+            </div>
+          </a>
+    
+          <a href="sweetheart.html">
+            <div class="btn">
+              <div class="image sweetheart"></div>
+              <span class="text">Sweet Heart</span>
+            </div>
+          </a>
+    
+          <a href="jawsum.html">
+            <div class="btn">
+              <div class="image jawsum"></div>
+              <span class="text">Mr. Jawsum</span>
+            </div>
+          </a>
+    
+          <a href="hooligans.html">
+            <div class="btn">
+              <div class="image hooligans"></div>
+              <span class="text">Valentões</span>
+            </div>
+          </a>
+    
+          <a href="humphrey.html">
+            <div class="btn">
+              <div class="image humphrey"></div>
+              <span class="text">Humphrey</span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="mobileMenu" id="historyMobileMenu">
+          <a href="../history/finals.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/history/general.gif" class="icon" height="32px" />
+              <span class="text">Finais</span>
+            </div>
+          </a>
+          <a href="../history/tagging.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/history/questions.gif" class="icon" height="32px" />
+              <span class="text">Tagging</span>
+            </div>
+          </a>
+          <a href="../history/weapons.html">
+            <div class="btn">
+              <img src="../src/img/whitespace/knife.png" class="icon" height="32px" />
+              <span class="text">Armas</span>
+            </div>
+          </a>
+    
+          <a href="../history/emotions/index.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/history/mechanics.gif" class="icon" height="32px" />
+              <span class="text">Emoções</span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="mobileMenu" id="worldsMobileMenu">
+          <a href="../worlds/headspace.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/Dream_World.png" class="icon" height="32px" />
+              <span class="text">Mundo Imaginário</span>
+            </div>
+          </a>
+          <a href="../worlds/faraway.html">
+            <div class="btn">
+              <img src="../src/img/menuoptions/GOOD_DOG.png" class="icon" height="32px" />
+              <span class="text">Mundo Real</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="content">
+            <div class="block">
+                <div class="subblock" style="flex: 1;">
+                    <div class="alert spoiler">
+                        <img src="../src/img/menuoptions/characters/basil_rw.png" height="96px">
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: auto;">
+                            <span style="font-weight: 700;">ALERTA DE SPOILER</span>
+                            <span>Essa página possui spoilers importantes referentes ao "plot-twist" do jogo OMORI. </span>
+                        </div>
+                        <img src="../src/img/menuoptions/characters/basil.webp" height="96px">
+                    </div>
+
+                    <div class="alert fandom">
+                        <img src="../src/img/menuoptions/characters/aubreyhappy.webp" height="96px">
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: auto;">
+                            <span style="font-weight: 700;">OMORI WIKI</span>
+                            <span>Boa parte do conteúdo de texto ou imagens foram retiradas da WIKI de fãs de OMORI.</span>
+                            <span>Se você gostar daqui, visite lá para mais detalhes em relação a história do jogo!</span>
+                            <a href="https://omori.fandom.com/wiki/" target="_blank">CLIQUE AQUI</a>
+                        </div>
+                        <img src="../src/img/menuoptions/characters/aubreyhappy.webp" height="96px">
+                    </div>
+
+                    <h1 class="title">BOSS</h1>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="subblock" style="flex: 80%">
+                    <p>
+                        <strong>BOSS</strong> é um personagem e o primeiro chefe de OMORI. 
+                    </p>
+
+                    <table>
+                      <tr>
+                        <th>Conteúdo</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div class="contentsub">
+                            <span class="contentButton">
+                              <a href="boss.html#profile">
+                                1. PERFIL
+                              </a>
+                            </span>
+
+                            <div class="insideList">
+                              <span class="contentButton">
+                                <a href="boss.html#appearence">
+                                  1.1 APARÊNCIA
+                                </a>
+                              </span>
+  
+                              <span class="contentButton">
+                                <a href="boss.html#personality">
+                                  1.2 PERSONALIDADE
+                                </a>
+                              </span>
+                            </div>
+
+                            <span class="contentButton">
+                              <a href="boss.html#history">
+                                2. HISTÓRIA
+                              </a>
+                            </span>
+
+                            <div class="insideList">
+                              <span class="contentButton">
+                                <a href="boss.html#how">
+                                  2.1 COMO ELES SE CONHECERAM?
+                                </a>
+                              </span>
+                            </div>
+
+                            <span class="contentButton">
+                              <a href="boss.html#images">
+                                3. IMAGENS
+                              </a>
+                            </span>
+
+                          </div>
+                        </th>
+                      </tr>
+                    </table>
+
+                    <h2 class="title" id="profile">PERFIL</h2>
+
+                    <div class="separatorline"></div>
+
+                    <h3 class="title" id="appearence">APARÊNCIA</h3>
+
+                    <p>
+                        BOSS parece ser uma figura gigante de rinoceronte roxo vestindo um macacão azul com duas alças que se estendem até os dedos dos pés. 
+                        Ele geralmente tem uma expressão de raiva no rosto e é bastante rude com aqueles com quem interage. 
+                    </p>
+
+                    <h3 class="title" id="personality">PERSONALIDADE</h3>
+
+                    <p>
+                        Apesar de seus traços negativos, ele é principalmente mostrado como um indivíduo atencioso, apesar de ser conhecido como um agressor local pelos residentes do FOREST PLAYGROUND. 
+                    </p>
+
+                    <p>
+                        Também é mencionado que, embora ele tenha usado BASIL como refém, BOSS garantiu que o menino não fosse ferido durante sua luta com o grupo. 
+                        Além disso, BOSS expressa preocupação com o bem-estar do BASIL quando este desaparece durante o jogo. 
+                    </p>
+                </div>
+                <div class="subblock infosub" >
+                    <div class="info">
+                        <img src="../src/img/menuoptions/characters/Boss_Sprite.gif" height="128px">
+                        <div class="line">
+                            <div class="name">Sexo</div>
+                            <div class="values">
+                                <div class="value">Homem</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Localizações</div>
+                            <div class="values">
+                                <div class="value">Playground Imaginário</div>
+                                <div class="value">Humphrey</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Vida</div>
+                            <div class="values">
+                                <div class="value">150</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Suco</div>
+                            <div class="values">
+                                <div class="value">25</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Ataque</div>
+                            <div class="values">
+                                <div class="value">6</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">Defesa</div>
+                            <div class="values">
+                                <div class="value">2</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">EXP</div>
+                            <div class="values">
+                                <div class="value">32</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="name">CLAMS</div>
+                            <div class="values">
+                                <div class="value">22</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="subblock">
+                    <h2 class="title" id="history">HISTÓRIA</h2>
+
+                    <div class="separatorline"></div>
+
+                    <h3 class="title" id="how">COMO ELES SE CONHECERAM?</h3>
+
+                    <p>
+                        Boss é encontrado pela primeira vez depois de brincar de esconde-esconde, onde é visto segurando BASIL como refém. 
+                        O grupo tenta convencer Boss a devolver BASIL, mas ele se recusa e inicia uma luta. 
+                        Ao ser derrotado, ele solta BASIL e permanece em seu lugar atrás de um recorte falso de uma árvore. 
+                    </p>
+
+                    <p>
+                        Boss pode ser encontrado novamente na ROTA OMORI após HEADSPACE ser reiniciado, agora executando o desafio BOSS RUSH localizado dentro de HUMPHREY. 
+                        Falar com ele ativará um teletransportador, permitindo ao jogador iniciar o desafio BOSS RUSH. 
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="subblock">
+                    <h2 class="title" id="images">IMAGENS</h2>
+
+                    <div class="separatorline"></div>
+
+                    <div class="imagecontainer">
+                        <img src="../src/img/gamepics/NO_BOSS_ZONE.webp">
+
+                        <img src="../src/img/menuoptions/characters/Boss_Sprite.gif">
+
+                        <img src="../src/img/menuoptions/characters/BOSSdefeatedl.gif">
+                    </div>
+
+                    <h2 class="title">Referências</h3>
+
+                    <a href="https://omori.fandom.com/wiki/BOSS" target="_blank">Omori Fandom</a>
+
+
+                </div>
+            </div>
+      </div>
+
+      <div class="footer">
+        <div class="separator">
+          <img class="logo" src="../src/img/OMOCAT_Logo.png" ignore=true />
+          <span class="copyright"><a href="https://omori-game.com/" target="_blank">OMORI</a> é propiedade de <a href="https://www.omocat-shop.com/" target="_blank">OMOCAT LLC.</a>.</span>
+          <span class="copyright">Trabalho de <span style="color: gray;"> Cauã De Souza Neves</span></span>
+          <span class="copyright"></span>
+  
+          <div class="socialmedia">
+            <a href="https://pastebin.com/wQT32sA8" target="_blank">
+              <div class="omoribtn">
+                <div class="inside">
+                  <img src="../src/img/social/discord.png">
+                </div>
+              </div>
+            </a>
+  
+            <a href="https://youtube.com/LearnMarshmello" target="_blank">
+              <div class="omoribtn">
+                <div class="inside">
+                  <img src="../src/img/social/youtube.png">
+                </div>
+              </div>
+            </a>
+  
+            <a href="https://github.com/mercuryVM/" target="_blank">
+              <div class="omoribtn">
+                <div class="inside">
+                  <img src="../src/img/social/github.png">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+    
+        <div class="separator" id="characters" style="align-items: flex-start;">
+          <span class="title">Personagens</span>
+          <div class="list">
+            <a href="sunny.html">OMORI</a>
+            <a href="aubrey.html">Aubrey</a>
+            <a href="kel.html">Kel</a>
+            <a href="hero.html">Hero</a>
+            <a href="basil.html">Basil</a>
+            <a href="mari.html">Mari</a>
+            <a href="boss.html">Boss</a>
+            <a href="pluto.html">Pluto</a>
+            <a href="sweetheart.html">Sweet Heart</a>
+            <a href="jawsum.html">Mr. Jawsum</a>
+            <a href="hooligans.html">Valentões</a>
+            <a href="humphrey.html">Humphrey</a>
+          </div>
+        </div>
+    
+        <div class="separator" style="align-items: flex-start;">
+          <span class="title">História</span>
+          <div class="list">
+            <a href="../history/tagging.html">Finais</a>
+            <a href="../history/tagging.html">Tagging</a>
+            <a href="../history/weapons.html">Armas</a>
+            <a href="../history/emotions/index.html">Emoções</a>
+          </div>
+        </div>
+    
+        <div class="separator" style="align-items: flex-start;">
+          <span class="title">Mundos</span>
+          <div class="list">
+            <a href="../worlds/headspace.html">Mundo Imaginário</a>
+            <a href="../worlds/faraway.html">Mundo Real</a>
+          </div>
+        </div>
+    
+        <div class="separator" style="align-items: flex-start;">
+          <span class="title">Extras</span>
+          <div class="list">
+            <a href="../music.html">Músicas</a>
+            <a href="../comments.html">Feedback</a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+</body>
+
+<!-– scripts carregamento posterior -->
+<script src="../src/js/dialogue.js"></script>
+    <script src="../src/js/imageopener.js"></script>
+    <script src="../src/js/global.js"></script>
+
+</html>
